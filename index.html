@@ -363,34 +363,56 @@
             </button>
                         
             <div class="modal-form">
-                <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
                 <form class="">
                     <div class="form-field">
                         <label for="name" class="">Имя</label>
-                        <input type="name" name="name" id="name" placeholder="" />
+                        <input class= "form-input" type="name" name="name" id="name" placeholder="" />
+                        <span class="form-icon">
+                            <svg class="name">
+                                <use href="./img/hw4/sprite.svg#icon-name"></use>
+                            </svg>
+                        </span>
+                        
                     </div>
 
                     <div class="form-field">
                         <label for="tel" class="">Телефон</label>
-                        <input type="tel" name="phone" id="tel" placeholder="" />
+                        <input class= "form-input" type="tel" name="tel" id="tel" placeholder="" />
+                        <span class="form-icon">
+                            <svg class="tel">
+                                <use href="./img/hw4/sprite.svg#icon-tel"></use>
+                            </svg>
+                        </span>
                     </div>
 
                     <div class="form-field">
                         <label for="email" class="">Почта</label>
-                        <input type="email" name="email" id="email" placeholder="" />
+                        <input class= "form-input" type="email" name="email" id="email" placeholder="" />
+                        <span class="form-icon">
+                            <svg class="email">
+                                <use href="./img/hw4/sprite.svg#icon-mail"></use>
+                            </svg>
+                        </span>
                     </div>
 
                     <div class="form-field">
                         <label for="comment">Комментарий</label>
-                        <textarea name="comment" rows="5" id="comment" placeholder="Введите текст"></textarea>
+                        <textarea class= "comment" name="comment" rows="5" id="comment" placeholder="Введите текст"></textarea>
                     </div>
 
-                    <input type="checkbox" name="agree" value="" id="agree" />
-                    <label for="agree">Соглашаюсь с рассылкой и принимаю 
-                      <a href="">Условия договора</a>
-                    </label>
+                    <div class="form-field">
+                        <label class="check">
+                            <input class= "check-input" type="checkbox" name="agree" value="" />
+                            <span class="check-icon"></span>
+                            <span class="check-text">
+                                Соглашаюсь с рассылкой и принимаю
+                                <a class="lisence" href="">Условия договора</a>
+                            </span>
+                        </label>
+                    </div>
 
-                    <button type="submit" class="">Отправить</button>
+                    <button type="submit" class="order">Отправить</button>
                 </form>
             </div>
         </div>
