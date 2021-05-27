@@ -9,7 +9,7 @@
   --secondary-text-color: #757575;
   --title-color: #212121;
   --accent-color: #2196f3;
-  --portfolio-item-gap: 20px;
+  --portfolio-item-gap: 30px;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -182,6 +182,7 @@ img {
 
 .navigation .auth-nav {
   margin-left: auto;
+  font-weight: 500;
 }
 
 .site-nav .link {
@@ -495,6 +496,15 @@ img {
   fill: var(--accent-color);
 }
 
+.clients-list:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-list a:focus svg {
+  fill: var(--accent-color);
+  outline: none;
+}
+
 .clients-item-1 {
   width: 44.27px;
   height: 49.23px;
@@ -532,6 +542,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: center;
 }
 
 .auth-nav .adress {
@@ -881,7 +892,7 @@ input[type="checkbox"] {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter .item {
